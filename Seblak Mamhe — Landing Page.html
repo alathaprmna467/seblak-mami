@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seblak Mamhe — Pedasnya Bikin Nagih</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff7ef;--surface:#ffffff;--text:#2b1410;--muted:#6f524a;--red:#c8200e;--red2:#e8461f;--gold:#f2a516;--line:#f0d9c8;--hero:#7a0f06;--herotext:#fff3e6}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1a0e0b;--surface:#26150f;--text:#fbeadf;--muted:#c4a597;--line:#43271c;--hero:#4a0a04}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1a0e0b;--surface:#26150f;--text:#fbeadf;--muted:#c4a597;--line:#43271c;--hero:#4a0a04}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.5px}
+.logo span{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#3a1200;font-weight:700;padding:13px 24px;border-radius:999px;text-decoration:none;border:0;font-size:16px}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor}
+.hero{background:radial-gradient(circle at 80% 20%,var(--red2),transparent 55%),var(--hero);color:var(--herotext);padding-bottom:64px}
+.hero nav .logo{color:var(--herotext)}
+.hero h1{font-size:clamp(34px,8vw,60px);line-height:1.08;margin:32px 0 16px;letter-spacing:-1.5px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{max-width:520px;font-size:18px;opacity:.92;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px}
+.chips span{background:rgba(255,255,255,.14);padding:6px 14px;border-radius:999px;font-size:14px}
+section{padding:56px 0}
+h2{font-size:clamp(26px,5vw,36px);margin:0 0 8px;letter-spacing:-.8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card .ic{font-size:30px}
+.card h3{margin:10px 0 4px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.level{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+.level b{min-width:84px}
+.bar{flex:1;height:10px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--red));border-radius:99px}
+.toppings{display:flex;flex-wrap:wrap;gap:10px}
+.toppings span{background:var(--surface);border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:15px}
+.steps{counter-reset:s;display:grid;gap:14px}
+.steps div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px 16px 62px;position:relative}
+.steps div:before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:800}
+.order{background:var(--red);color:#fff;text-align:center;border-radius:28px;padding:44px 24px}
+.order p{opacity:.92;margin:8px 0 22px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:32px 0 40px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav><div class="logo">Seblak <span>Mamhe</span></div><a class="btn" href="#pesan">Pesan</a></nav>
+    <h1>Pedasnya <em>bikin nagih</em>, kuahnya bikin hangat.</h1>
+    <p>Seblak racikan Mamhe: bumbu kencur yang wangi, kerupuk yang lembut, topping lengkap, dan level pedas sesuai nyalimu.</p>
+    <div class="cta"><a class="btn" href="#pesan">Pesan Sekarang</a><a class="btn alt" href="#menu">Lihat Menu</a></div>
+    <div class="chips"><span>🌶️ Level pedas bebas</span><span>🍲 Dimasak saat dipesan</span><span>🥢 Topping sepuasnya</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Kenapa Seblak Mamhe?</h2>
+    <p class="sub">Sederhana: rasa rumahan yang bikin kangen.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🌿</div><h3>Bumbu Kencur Asli</h3><p>Diracik segar, aromanya khas dan gurihnya pas.</p></div>
+      <div class="card"><div class="ic">🔥</div><h3>Pedas Sesuai Selera</h3><p>Dari tidak pedas sampai level yang bikin keringetan.</p></div>
+      <div class="card"><div class="ic">🍳</div><h3>Selalu Fresh</h3><p>Dimasak setelah kamu pesan, disajikan masih panas.</p></div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Pilih Level Pedasmu</h2>
+    <p class="sub">Berani yang mana?</p>
+    <div class="level"><b>Santai</b><div class="bar"><i style="width:15%"></i></div></div>
+    <div class="level"><b>Lumayan</b><div class="bar"><i style="width:40%"></i></div></div>
+    <div class="level"><b>Pedas</b><div class="bar"><i style="width:70%"></i></div></div>
+    <div class="level"><b>Nekat 🔥</b><div class="bar"><i style="width:100%"></i></div></div>
+  </section>
+
+  <section>
+    <h2>Topping Favorit</h2>
+    <p class="sub">Mix and match sesukamu.</p>
+    <div class="toppings">
+      <span>Kerupuk</span><span>Makaroni</span><span>Ceker</span><span>Bakso</span><span>Sosis</span><span>Telur</span><span>Sayur Sawi</span><span>Mie</span><span>Tulang Rangu</span><span>Batagor</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cara Pesan</h2>
+    <p class="sub">Tiga langkah, seblak siap.</p>
+    <div class="steps">
+      <div>Chat kami lewat WhatsApp</div>
+      <div>Pilih topping dan level pedas</div>
+      <div>Tunggu, seblak hangat sampai ke kamu</div>
+    </div>
+  </section>
+
+  <section id="pesan">
+    <div class="order">
+      <h2>Lapar? Yuk pesan!</h2>
+      <p>Seblak hangat, pedas, dan bikin nagih menunggumu.</p>
+      <a class="btn" href="https://wa.me/">Chat via WhatsApp</a>
+    </div>
+  </section>
+</main>
+<footer>© Seblak Mamhe · Dibuat dengan 🌶️</footer>
+</body>
+</html>
